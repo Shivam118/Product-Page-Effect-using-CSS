@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Barlow,sans-serif;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background:rgba(0, 0, 0, 0.322);
+    /* background:linear-gradient(to bottom left, rgba(5, 0, 73,1),rgba(73,0,0,0.8)); */
+}
+.container{
+    position:relative;
+    max-width:70vw;
+}
+.container .card{
+    padding:2rem 5vw;
+    text-align:left;
+    font-size:1.1vw;
+    background:rgba(150, 2, 2, 0.904);
+    box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.2);
+    display:flex;
+    align-items: center;
+    border-radius:50%;
+    transition:1s;
+    color:#fff;
+    width:25vw;
+    height:22em;
+    transition:0.75s linear;
+}
+.container .card:hover{
+    padding:4rem 5vw;
+    width:auto;
+    text-align:left;
+    background:rgba(2, 12, 150, 0.904);
+    border-radius:2em;
+    box-shadow: 1em 1em 2em rgba(0,0,0,0.5);
+    display:flex;
+    align-items: center;
+    transition:0.5s linear;
+}
+.container .card .cardbody{
+    width:25vw;
+    height:15em;
+    visibility: hidden;
+    opacity:0;
+    transition:0.054s linear;
+}
+.container .card:hover .cardbody{
+    width:35vw;
+    visibility:visible;
+    opacity:1;
+    transition:0.5s linear;
+}
+.container .card .cardimg img{
+    position:absolute;
+    right:4.75vw;
+    top:-2em;
+    width:15vw;
+    transition:0.75s linear;
+}
+.container .card:hover .cardimg img{
+    position:absolute;
+    right:1vw;
+    top:-3em;
+    transition:0.75s linear;
+}
+.container .card .cardbody h3{
+    font-size:3vw;
+    margin:0.25em 0vw;
+}
+.container .card .cardbody p{
+    width:22.5vw;
+}
+.container .card .cardbody a{
+    background:red;
+    color:#fff;
+    font-size:1.25vw;
+    padding:0.5em 1vw;
+    text-decoration:none;
+    border-radius:2em;
+    box-shadow:1em 1em 2em rgba(0,0,0,0.2);
+}
