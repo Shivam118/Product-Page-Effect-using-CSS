@@ -18,7 +18,8 @@
                     molestiae fugit quae facere! Magni recusandae illo, sed eius animi reprehenderit nostrum quod facere
                     porro consequuntur neque quos esse error!</p>
                 <br>
-                <a href="#">Read More</a>
+                <h4 id="note">Study for your EXAMS.</h4>
+                <a href="#" onmouseover="note()" onmouseout="noteout()">Read More</a>
             </div>
             <div class="cardimg">
                 <img src="cokebg.png">
@@ -26,5 +27,15 @@
         </div>
     </div>
 </body>
+<script type="text/javascript">
+function note(){
+    document.getElementById('note').style.visibility = "visible";
+    document.querySelector('a').style.display = "none";
+}
+function noteout(){
+    document.getElementById('note').style.visibility = "hidden";
+    document.querySelector('a').style.display = "";
+}
+</script>
 
 </html>
